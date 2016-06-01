@@ -33,19 +33,25 @@ namespace Lesson02
             //}
 
 
-            Rectangle r = new Rectangle();
+            //    Rectangle r = new Rectangle();
 
-            r.Changed += new EventHandler(r_Changed);
-            r.Length = 10.2;
-            Console.WriteLine("this is {0}" , Rectangle.shapeName );
+            //    r.Changed += new EventHandler(r_Changed);
+            //    r.Length = 10.2;
+            //    Console.WriteLine("this is {0}" , Rectangle.shapeName );
 
+            //}
+            //static void r_Changed(object sender, EventArgs e)
+
+            //    {
+            //        Rectangle r = (Rectangle)sender;
+            //        Console.WriteLine("Value Changed: Length = {0}", r.Length);
+            //   
+
+            Rectangle1 myrec1 = new Rectangle1(10,20);
+
+            Console.WriteLine("width={0} ,height={1} ,area={2}", myrec1.Width, myrec1.Length, myrec1.getArea1());
+             
         }
-        static void r_Changed(object sender, EventArgs e)
-    
-            {
-                Rectangle r = (Rectangle)sender;
-                Console.WriteLine("Value Changed: Length = {0}", r.Length);
-            }
 
     }
 
