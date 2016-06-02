@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 
-namespace ParameterizedSP
-{
-    static class Program
-    {
+//namespace ParameterizedSP
+//{
+    //static class Program
+    //{
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        [STAThread]
-        static void Main()
+        //[STAThread]
+       // static void Main()
         //{
         //    Application.EnableVisualStyles();
         //    Application.SetCompatibleTextRenderingDefault(false);
@@ -44,14 +44,14 @@ namespace ParameterizedSP
 
             //xml file
 
-            using (XmlReader reader = XmlReader.Create("Customers.xml"))
-            {
-                while (reader.Read())
-                {
+        //    using (XmlReader reader = XmlReader.Create("Customers.xml"))
+        //    {
+        //        while (reader.Read())
+        //        {
 
-        if (reader.IsStartElement())    {      switch (reader.Name)      {        case "CompanyName":          if (reader.Read())          {            Console.Write(            "Company Name: {0}, ",             reader.Value);          }          break;        case "Phone":          if (reader.Read())          {            Console.WriteLine(             "Phone: {0}", reader.Value);          }          break;      }    }  } } 
-                }
+        //if (reader.IsStartElement())    {      switch (reader.Name)      {        case "CompanyName":          if (reader.Read())          {            Console.Write(            "Company Name: {0}, ",             reader.Value);          }          break;        case "Phone":          if (reader.Read())          {            Console.WriteLine(             "Phone: {0}", reader.Value);          }          break;      }    }  } } 
+    //           }
 
-            }
-    }
+    //        }
+    //}
 
